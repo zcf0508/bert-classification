@@ -1,0 +1,14 @@
+[tool.ruff]
+select = ["E", "F"]
+
+line-length = 120
+
+fix = true
+unfixable = ["F401"]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "E402"]
+
+[tool.mypy]
+warn_return_any = 'True'
+warn_unused_configs = 'True'
